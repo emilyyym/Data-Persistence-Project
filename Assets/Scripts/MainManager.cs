@@ -36,6 +36,12 @@ public class MainManager : MonoBehaviour
                 brick.onDestroyed.AddListener(AddPoint);
             }
         }
+        
+      
+    }
+   public void StartNew()
+    {
+        SceneManager.LoadScene(1);
     }
 
     private void Update()
@@ -67,6 +73,7 @@ public class MainManager : MonoBehaviour
         m_Points += point;
         ScoreText.text = $"Score : {m_Points}";
     }
+    
 
     public void GameOver()
     {
