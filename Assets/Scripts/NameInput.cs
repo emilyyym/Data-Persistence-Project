@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class NameInput : MonoBehaviour
 {
-    public static NameInput Scene1;
+    public static NameInput menu;
     public TMP_InputField inputField;
 
     public string Player_Name;
 
     private void Awake()
     {
-        if(Scene1 == null)
+        if(menu == null)
         {
-            Scene1 = this;
+            menu = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -28,7 +28,7 @@ public class NameInput : MonoBehaviour
     {
         Player_Name = inputField.text;
 
-        SceneManager.LoadSceneAsync("Scene2");
+        SceneManager.LoadSceneAsync("main");
     }
 
 }

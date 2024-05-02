@@ -5,6 +5,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 [Serializable]
 public class HighScore : MonoBehaviour
@@ -12,7 +13,7 @@ public class HighScore : MonoBehaviour
     
     private int Bestscore;
     public static HighScore instance { get; private set; }
-    public Text HighScoreText;
+    public TMP_Text HighScoreText;
 
     
     private void OnAwake()

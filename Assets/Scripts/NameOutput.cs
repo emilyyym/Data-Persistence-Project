@@ -11,6 +11,8 @@ public class NameOutput : MonoBehaviour
     public void Awake()
     {
 
-        display_Player_name.text = NameInput.Scene1.Player_Name;
+        display_Player_name.text = NameInput.menu.Player_Name;
+        DontDestroyOnLoad(display_Player_name);
+
     }
 }
